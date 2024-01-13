@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             VALUES ('$firstName', '$lastName', '$email', '$phoneNumber', '$address', '$state', '$pincode', '$password','$SelectCourse')";
 
     if ($conn->query($sql) === TRUE) {
-        header("location:login.html");
+        header("location:../login.html");
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
